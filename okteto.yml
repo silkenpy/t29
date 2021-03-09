@@ -1,0 +1,8 @@
+name: nginx
+image: nginx:alpine
+workdir: /tmp
+command: ["sh"]
+forward:
+  - 80:80
+persistentVolume:
+  enabled: false
