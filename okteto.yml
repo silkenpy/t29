@@ -3,6 +3,6 @@ image: nginx:alpine
 workdir: /tmp
 command: ["sh"]
 forward:
-  - 80:80
+  - 8080:80
 persistentVolume:
   enabled: false
